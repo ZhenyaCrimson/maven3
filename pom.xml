@@ -54,7 +54,7 @@
           <configuration>
             <archive>
               <manifest>
-                <mainClass>omelchenko.App</mainClass>
+                <mainClass>com.omelchenko.App</mainClass>
               </manifest>
             </archive>
           </configuration>
