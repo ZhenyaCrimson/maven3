@@ -1,7 +1,8 @@
 package com.omelchenko;
-
-import java.util.Scanner;
-
+import  com.omelchenko.HobbyException;
+import  com.omelchenko.Hobby;
+import  com.omelchenko.Fishing;
+import com.omelchenko.Football;
 public class App
 {
     public static void main(String[] args) {
@@ -10,9 +11,11 @@ public class App
     private static void  run(){
         Hobby hobby1 = new Football("Football", 5,1050.50f);
         Hobby hobby2 = new Fishing("Fishing", 2,"River");
-        Hobby[] array_of_hobby = {hobby1,hobby2};
-        for (Hobby temp: array_of_hobby) {
-            temp.tellAboutHobby();
+        int a=4;
+            try {
+                hobby1.tellAboutHobby(a);
+            } catch (HobbyException ex) {
+                System.out.println("Integer less than 5");
+            }
         }
-    }
 }

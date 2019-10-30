@@ -16,7 +16,10 @@ public class Fishing extends Hobby {
     }
 
     @Override
-    public void tellAboutHobby() {
+    public void tellAboutHobby(final int args) throws HobbyException {
+        if(args < a){
+            throw new HobbyException();
+        }
         System.out.println(this.toString());
         System.out.println("My favorite hobby is fishing");
     }

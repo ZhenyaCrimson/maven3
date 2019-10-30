@@ -3,6 +3,7 @@ package com.omelchenko;
 public abstract class Hobby {
    private String hobby_name;
    private int years_spend;
+   final int a=5;
 
     public String getHobby_name() {
         return hobby_name;
@@ -32,5 +33,6 @@ public abstract class Hobby {
                 ", years_spend=" + years_spend +
                 '}';
     }
-  public abstract void tellAboutHobby();
+  public abstract void tellAboutHobby(int args) throws HobbyException;
+
 }
